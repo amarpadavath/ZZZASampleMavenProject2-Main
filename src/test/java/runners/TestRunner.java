@@ -12,9 +12,9 @@ import utils.ExtentReportUtil;
 @CucumberOptions(features = "src/test/resources/features/DermoQA_TextBox.feature", 
 					glue = { "stepDefinitions","hooks" }, 
 				//	tags = "@edge", 
-					plugin = { "pretty", "html:target/cucumber-reports.html" }
-					//dryRun = true,
-					//monochrome = true
+					plugin = { "pretty", "html:target/cucumber-reports.html" },
+					dryRun = false,
+					monochrome = true
 
 		)
 

@@ -8,6 +8,7 @@ public class ExtentReportUtil {
 
     private static ExtentReports extent;
     private static ExtentTest test;
+   
 
     // Initialize ExtentReports and the ExtentSparkReporter
     public static void initExtentReport() {
@@ -16,13 +17,14 @@ public class ExtentReportUtil {
             sparkReporter.config().setReportName("Automation Test Report");
             sparkReporter.config().setTheme(com.aventstack.extentreports.reporter.configuration.Theme.STANDARD);
             sparkReporter.config().setDocumentTitle("Test Execution Report");
+         
 
             extent = new ExtentReports();
             extent.attachReporter(sparkReporter);
         }
     }
-
-    // Start a test in the ExtentReport
+    
+ // Start a test in the ExtentReport
     public static void startTest(String testName) {
         test = extent.createTest(testName);
     }
@@ -52,4 +54,6 @@ public class ExtentReportUtil {
             test.fail(message);
         }
     }
+	
+	
 }

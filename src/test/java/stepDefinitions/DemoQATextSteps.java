@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import pages.DemoQAHomePage;
 import pages.DemoQATextBoxPage;
 import utils.ConfigReader;
+import utils.ExtentReportUtil;
 
 public class DemoQATextSteps extends BaseTest {
 	
@@ -33,6 +34,7 @@ public class DemoQATextSteps extends BaseTest {
 		textBoxpage = new DemoQATextBoxPage(driver);
 		
 		homepage.clickOnElementsJS();
+		 ExtentReportUtil.log("Step: the user is on the login page");
 		
 		
 	}
@@ -47,11 +49,13 @@ public class DemoQATextSteps extends BaseTest {
 		textBoxpage.clickOnSubmitElementsJS();
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
+		 ExtentReportUtil.log("Step: the user is on the login page");
 	}
 	@Then("I validate the data entered in form")
 	public void i_validate_the_data_entered_in_form() {
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new io.cucumber.java.PendingException();
+		 ExtentReportUtil.log("Step: the user is on the login page");
 	}
 
 
