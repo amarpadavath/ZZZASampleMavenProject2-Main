@@ -35,6 +35,7 @@ public class BaseTest {
 		}
 		
 		driver.manage().window().maximize();
+		//Amar
 	}
 	
 	
