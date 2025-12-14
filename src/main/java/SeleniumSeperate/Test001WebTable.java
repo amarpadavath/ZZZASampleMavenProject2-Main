@@ -9,7 +9,7 @@ public class Test001WebTable {
 		// TODO Auto-generated method stub
 		
 		WebDriver driver2 = new ChromeDriver();
-		WebDriver driver3 = new ChromeDriver();
+		WebDriver driver4 = new ChromeDriver();
 		
 		
 
