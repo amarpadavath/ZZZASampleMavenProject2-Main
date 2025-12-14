@@ -8,7 +8,8 @@ public class Test001WebTable {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		WebDriver driver1 = new ChromeDriver();
+		WebDriver driver2 = new ChromeDriver();
+		WebDriver driver3 = new ChromeDriver();
 		
 		
 
