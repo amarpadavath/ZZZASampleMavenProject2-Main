@@ -16,7 +16,7 @@ public class Test001WebTable {
 		
 		driver.get("file:///F:/NotepadPrograms/Notes/2.Selenium/WebTable.html");
 		
-		List<WebElement> s = driver.findElements(By.xpath("//table/tbody/tr"));
+		List<WebElement> s = driver.findElements(By.xpath("(//table/tbody/tr)"));
 		
 		for(WebElement w : s)
 		{
